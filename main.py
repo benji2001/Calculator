@@ -1,11 +1,8 @@
 from tkinter import *
+
+
+global expression = ""
  
-# globally declare the expression variable
-expression = ""
- 
- 
-# Function to update expression
-# in the text entry box
 def press(num):
     # point out the global expression variable
     global expression
@@ -30,8 +27,7 @@ def equalpress():
         global expression
  
         # eval function evaluate the expression
-        # and str function convert the result
-        # into string
+        #and str to convert output to string
         total = str(eval(expression))
  
         equation.set(total)
